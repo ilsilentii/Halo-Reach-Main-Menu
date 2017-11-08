@@ -97,10 +97,10 @@ body.back-row-toggle .rain.back-row {
 
 @keyframes stem {
   0% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   65% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   75% {
     opacity: 0;
