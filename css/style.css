@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: url(../media/images/background.png) no-repeat center center fixed;
+  background: url(../media/images/clouds.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11,6 +11,40 @@ body {
   height: 100%;
   margin: 0;
   overflow: hidden;
+}
+#mountain {
+  position: absolute;
+  left:5%;
+  top:0;
+  height:100%;
+  width: 100%;
+  background: url(../media/images/mountain.png) no-repeat;
+  background-size: 105% 105%;
+  animation: landscape 40s ease-in-out infinite;
+}
+
+#landscape {
+  position: absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width: 100%;
+  background: url(../media/images/front_landscape.png) no-repeat;
+  background-size: 127% 107%;
+}
+
+.movingMountian {
+  animation: landscape 40s ease-in-out infinite;
+}
+
+.movingLandscape {
+  animation: landscape 80s ease-in-out infinite;
+}
+
+@keyframes landscape {
+    0%   {background-position: left center;}
+    50%  {background-position: right center;}
+    100% {background-position: left center;}
 }
 
 .rain {
@@ -63,10 +97,10 @@ body.back-row-toggle .rain.back-row {
 
 @keyframes stem {
   0% {
-    opacity: 0.8;
+    opacity: 1;
   }
   65% {
-    opacity: 0.8;
+    opacity: 1;
   }
   75% {
     opacity: 0;
@@ -154,7 +188,6 @@ body.splat-toggle .splat {
 .back-row-toggle {
   top: 90px;
   line-height: 12px;
-  padding-top: 14px;
 }
 
 .single-toggle {
