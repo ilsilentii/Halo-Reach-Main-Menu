@@ -13,50 +13,29 @@ body {
   overflow: hidden;
 }
 
-#ground {
-  animation: move 80s ease-in-out infinite;
-}
-
-@keyframes move {
-  0% {transform:translate(0,0);}
-  50% {transform:translate(-16%,0);}
-  100% {transform: translate(0,0);}
-}
-
 #mountain {
   position: absolute;
-  left:5%;
-  top:0;
-  height:100%;
-  width: 100%;
-  background: url(../media/images/mountain.png) no-repeat;
-  background-size: 105% 105%;
-  animation: landscape 60s ease-in-out infinite;
   z-index: -1;
+  animation: mountainTranslate 80s ease-in-out infinite;
+}
+
+@keyframes mountainTranslate {
+  0% {transform:translate(4%,-10%);}
+  15% {transform:translate(3%,-10%);}
+  50% {transform:translate(-2%,-10%);}
+  100% {transform: translate(4%,-10%);}
 }
 
 #landscape {
   position: absolute;
-  bottom:0;
-  top:0;
-  height:75%;
-  width: 100%;
-  background: url(../media/images/front_landscape.png) no-repeat;
-  background-size: 100%;
+  animation: landscapeTranslate 80s ease-in-out infinite;
 }
 
-.movingMountian {
-  animation: landscape 40s ease-in-out infinite;
-}
-
-.movingLandscape {
-  animation: landscape 80s ease-in-out infinite;
-}
-
-@keyframes landscape {
-    0%   {background-position: left center;}
-    50%  {background-position: right center;}
-    100% {background-position: left center;}
+@keyframes landscapeTranslate {
+  0% {transform:translate(0,0);}
+  15% {transform:translate(-1%,0);}
+  50% {transform:translate(-16%,0);}
+  100% {transform: translate(0,0);}
 }
 
 .rain {
