@@ -12,6 +12,17 @@ body {
   margin: 0;
   overflow: hidden;
 }
+
+#ground {
+  animation: move 80s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {transform:translate(0,0);}
+  50% {transform:translate(-16%,0);}
+  100% {transform: translate(0,0);}
+}
+
 #mountain {
   position: absolute;
   left:5%;
@@ -21,16 +32,17 @@ body {
   background: url(../media/images/mountain.png) no-repeat;
   background-size: 105% 105%;
   animation: landscape 60s ease-in-out infinite;
+  z-index: -1;
 }
 
 #landscape {
   position: absolute;
-  left:0;
+  bottom:0;
   top:0;
-  height:100%;
+  height:75%;
   width: 100%;
   background: url(../media/images/front_landscape.png) no-repeat;
-  background-size: 127% 107%;
+  background-size: 100%;
 }
 
 .movingMountian {
