@@ -5,12 +5,4 @@ $(document).ready(function(){
       $("#rainSoundEffect").animate({volume: 0.03}, 7000);
   }, 1000);
 
-  $("#onHover")[0].volume = 0.2;
-  $(".select1").mouseenter(function() {
-  $("#onHover")[0].play();
-});
-$(".select2").mouseenter(function() {
-$("#onHover")[0].play();
-});
-
 });
