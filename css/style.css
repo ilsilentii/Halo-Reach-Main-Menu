@@ -54,7 +54,7 @@ body {
 
 @keyframes pulse {
   0% {
-    background:rgba(255,255,255,0.085);
+    background:rgba(255,255,255,0.1);
     border-left: solid 3px rgba(255, 255, 255, 0.5);
     color:rgba(255, 255, 255, 1);
    }
@@ -64,7 +64,7 @@ body {
     color:rgba(255, 255, 255, 1);
   }
   100% {
-    background:rgba(255,255,255,0.085);
+    background:rgba(255,255,255,0.1);
     border-left: solid 3px rgba(255, 255, 255, 0.5);
     color:rgba(255, 255, 255, 1);
    }
