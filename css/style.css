@@ -45,7 +45,7 @@ body {
   font-size: 25px;
 }
 
-.select1:hover, .select2:hover {
+.pulse {
   animation: pulse 2s infinite;
   cursor:pointer;
   cursor: hand;
