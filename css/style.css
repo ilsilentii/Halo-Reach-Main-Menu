@@ -1,3 +1,6 @@
+@font-face { font-family: conduit; src: url('../media/fonts/conduit_itc.ttf'); }
+@font-face { font-family: conduit-bold; src: url('../media/fonts/conduit_itc_bold.ttf'); }
+
 html {
   height: 100%;
 }
@@ -11,6 +14,60 @@ body {
   height: 100%;
   margin: 0;
   overflow: hidden;
+}
+
+.select1 {
+  width: 20%;
+  padding-left:0.6%;
+  padding-top:0.6%;
+  padding-bottom: 0.6%;
+  position: absolute;
+  left:7%;
+  bottom: 22.5%;
+  z-index: 2;
+  color:rgba(255, 255, 255, 0.6);
+  font-family: conduit;
+  font-size: 25px;
+
+}
+
+.select2 {
+  width: 20%;
+  padding-left:0.6%;
+  padding-top:0.6%;
+  padding-bottom: 0.6%;
+  position: absolute;
+  left:7%;
+  bottom: 19%;
+  z-index: 2;
+  color:rgba(255, 255, 255, 0.6);
+  font-family: conduit;
+  font-size: 25px;
+}
+
+.select1:hover, .select2:hover {
+  animation: pulse 2s infinite;
+  cursor:pointer;
+  cursor: hand;
+  opacity:0.85;
+}
+
+@keyframes pulse {
+  0% {
+    background:rgba(255,255,255,0.085);
+    border-left: solid 3px rgba(255, 255, 255, 0.5);
+    color:rgba(255, 255, 255, 1);
+   }
+  50% {
+    background:rgba(255,255,255,0.03);
+    border-left: solid 3px rgba(255, 255, 255, 0.2);
+    color:rgba(255, 255, 255, 1);
+  }
+  100% {
+    background:rgba(255,255,255,0.085);
+    border-left: solid 3px rgba(255, 255, 255, 0.5);
+    color:rgba(255, 255, 255, 1);
+   }
 }
 
 #mountain {
@@ -27,7 +84,9 @@ body {
 }
 
 #landscape {
+  z-index: 1;
   position: absolute;
+  top:-10%;
   animation: landscapeTranslate 80s ease-in-out infinite;
 }
 
