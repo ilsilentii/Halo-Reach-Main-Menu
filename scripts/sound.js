@@ -5,4 +5,8 @@ $(document).ready(function(){
       $("#rainSoundEffect").animate({volume: 0.03}, 7000);
   }, 1000);
 
+  $("#campaign").click(function(){
+    $("#rainSoundEffect").animate({volume: 0}, 5000);
+  });
+
 });

@@ -11,6 +11,7 @@
   <script src="scripts/rain.js"></script>
   <script src="scripts/sound.js"></script>
   <script src="scripts/hover.js"></script>
+  <script src="scripts/startmenu.js"></script>
 
   <!-- Audio -->
   <audio id="rainSoundEffect" src="media/sounds/rain_effect.mp3" autoplay loop></audio>
@@ -18,17 +19,10 @@
   <audio id="onHover" src="media/sounds/cursor_vertical.wav"></audio>
   <title>Halo Reach</title>
 
-  <script>
-$(document).ready(function(){
-    $("#campaign").click(function(){
-        $("#container").load("https://ilsilentii.github.io/Halo-Reach-Main-Menu/campaign.html");
-    });
-});
-</script>
 
 </head>
 
-  <body class="back-row-toggle">
+  <body class="back-row-toggle start">
     <div id="container">
       <img id="landscape" src="media/images/front_landscape.png" alt="Landscape" height="120%" width="120%" />
       <img id="mountain" src="media/images/mountain.png" alt="Mountain" height="120%" width="105%" />
