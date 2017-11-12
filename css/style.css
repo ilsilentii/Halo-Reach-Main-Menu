@@ -3,6 +3,7 @@
 
 html {
   height: 100%;
+  cursor:url(../media/images/arrow.png), auto;
 }
 
 body {
@@ -47,8 +48,6 @@ body {
 
 .pulse {
   animation: pulse 2s infinite;
-  cursor:pointer;
-  cursor: hand;
   opacity:0.85;
 }
 
@@ -74,6 +73,10 @@ body {
   position: absolute;
   z-index: -1;
   animation: mountainTranslate 80s ease-in-out infinite;
+}
+
+#logo {
+  opacity: 0.5;
 }
 
 @keyframes mountainTranslate {
