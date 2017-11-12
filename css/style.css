@@ -14,14 +14,6 @@ html {
   overflow: hidden;
 }
 
-.campaign {
-  background: url(../media/images/menu.png) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-}
-
 .select1 {
   width: 20%;
   padding-left:0.6%;
